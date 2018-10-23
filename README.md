@@ -1,0 +1,2 @@
+# WFTrading
+Dummy Fx platform 
