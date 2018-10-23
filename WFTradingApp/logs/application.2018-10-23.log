@@ -1,0 +1,72 @@
+10:28:06.235 [main] INFO  c.w.fx.trading.FxTradeApplication - Starting FxTradeApplication on WDU8L0000862 with PID 10132 (C:\Users\SC01QAd\SRI\Personal\java\WFTradingApp\target\classes started by SC01QAd in C:\Users\SC01QAd\SRI\Personal\java\WFTradingApp)
+10:28:06.241 [main] INFO  c.w.fx.trading.FxTradeApplication - No active profile set, falling back to default profiles: default
+10:28:06.355 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35eae618: startup date [Tue Oct 23 10:28:06 CEST 2018]; root of context hierarchy
+10:28:10.646 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b4b25af2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:28:12.045 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+10:28:12.084 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+10:28:12.119 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:28:12.120 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+10:28:12.154 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\JDK8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Gemalto\Classic Client\BIN;C:\Program Files (x86)\Gemalto\Classic Client\BIN;C:\Program Files (x86)\Gemalto\IDGo 800 PKCS#11\;C:\Program Files (x86)\Enterprise Vault\EVClient\;C:\WINDOWS\System32\Oracle11;C:\Program Files (x86)\Plantronics\PlantronicsURE\;C:\soft\putty\;C:\soft\Git\cmd;C:\Users\SC01QAd\soft\apache-maven-3.5.3\bin;C:\soft\putty;C:\soft\zookeeper-3.4.9\bin;C:\soft\scala\bin;C:\JDK8\bin;;.]
+10:28:12.435 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:28:12.436 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6081 ms
+10:28:12.956 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+10:28:12.958 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2-console/*]
+10:28:12.964 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:28:12.965 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:28:12.965 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:28:12.966 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:28:13.351 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:28:14.293 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:28:14.465 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+10:28:14.505 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+10:28:14.742 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+10:28:14.746 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+10:28:14.843 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10:28:15.247 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+10:28:16.528 [main] INFO  o.h.t.s.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@17efec8c'
+10:28:16.533 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:28:18.553 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:28:18.698 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/orders/unMatched],methods=[GET]}" onto public java.util.List<com.worldfirst.fx.trading.model.TradeOrder> com.worldfirst.fx.trading.web.OrderController.getUnMatchedOrders()
+10:28:18.701 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/orders/{userId}],methods=[GET]}" onto public java.util.List<com.worldfirst.fx.trading.model.TradeOrder> com.worldfirst.fx.trading.web.OrderController.getOrdersForUserId(java.lang.String)
+10:28:18.702 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/orders/order],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.worldfirst.fx.trading.model.TradeOrder> com.worldfirst.fx.trading.web.OrderController.cancelOrder(com.worldfirst.fx.trading.model.TradeOrder)
+10:28:18.702 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/orders],methods=[GET]}" onto java.util.List<com.worldfirst.fx.trading.model.TradeOrder> com.worldfirst.fx.trading.web.OrderController.allOrders()
+10:28:18.703 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/orders/order],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.worldfirst.fx.trading.model.TradeOrder> com.worldfirst.fx.trading.web.OrderController.registerOrder(com.worldfirst.fx.trading.model.TradeOrder)
+10:28:18.704 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/orders/matched],methods=[GET]}" onto public java.util.Map<com.worldfirst.fx.trading.model.TradeOrder, java.util.List<com.worldfirst.fx.trading.model.TradeOrder>> com.worldfirst.fx.trading.web.OrderController.getMatchedTrades()
+10:28:18.704 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/orders/order/{id}],methods=[DELETE]}" onto public void com.worldfirst.fx.trading.web.OrderController.deleteOrder(java.lang.Long)
+10:28:18.705 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/orders/order/{id}],methods=[GET]}" onto public com.worldfirst.fx.trading.model.TradeOrder com.worldfirst.fx.trading.web.OrderController.getOrder(java.lang.Long)
+10:28:18.707 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+10:28:18.712 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+10:28:18.714 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+10:28:18.716 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+10:28:18.724 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:28:18.726 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:28:19.273 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:28:19.684 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@35eae618: startup date [Tue Oct 23 10:28:06 CEST 2018]; root of context hierarchy
+10:28:19.811 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:28:19.812 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:28:19.843 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in orderControllerAdvice
+10:28:20.414 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:28:20.417 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+10:28:20.435 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+10:28:20.469 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+10:28:20.471 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+10:28:20.530 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+10:28:20.561 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+10:28:21.217 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+10:28:21.256 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:28:21.294 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+10:28:21.300 [main] INFO  c.w.fx.trading.FxTradeApplication - Started FxTradeApplication in 16.212 seconds (JVM running for 57.642)
+10:28:21.522 [main] INFO  c.w.fx.trading.FxTradeApplication - TradeOrder found with findAll():
+10:28:21.522 [main] INFO  c.w.fx.trading.FxTradeApplication - -------------------------------
+10:28:21.564 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+10:28:21.828 [main] INFO  c.w.fx.trading.FxTradeApplication - TradeOrder{id=1, userId='Sam123', orderType='BID', currency='GBP/USD', price=1.1200, amount=8500, createdDate=2018-10-23 10:28:21.315, status='PENDING'}
+10:28:21.828 [main] INFO  c.w.fx.trading.FxTradeApplication - TradeOrder{id=2, userId='John123', orderType='ASK', currency='GBP/USD', price=1.1200, amount=4000, createdDate=2018-10-23 10:28:21.511, status='PENDING'}
+10:28:21.829 [main] INFO  c.w.fx.trading.FxTradeApplication - TradeOrder{id=3, userId='Jack456', orderType='ASK', currency='GBP/USD', price=1.100, amount=4000, createdDate=2018-10-23 10:28:21.513, status='PENDING'}
+10:28:21.829 [main] INFO  c.w.fx.trading.FxTradeApplication - TradeOrder{id=4, userId='Jill123', orderType='ASK', currency='GBP/USD', price=1.1200, amount=300, createdDate=2018-10-23 10:28:21.516, status='PENDING'}
+10:28:21.830 [main] INFO  c.w.fx.trading.FxTradeApplication - TradeOrder{id=5, userId='Mary001', orderType='BID', currency='GBP/USD', price=1.1100, amount=300, createdDate=2018-10-23 10:28:21.519, status='EXECUTED'}
+10:28:21.830 [main] INFO  c.w.fx.trading.FxTradeApplication - TradeOrder{id=6, userId='Fred789', orderType='BID', currency='GBP/USD', price=1.1000, amount=300, createdDate=2018-10-23 10:28:21.52, status='CANCELLED'}
+10:28:27.121 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10:28:27.122 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+10:28:27.210 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 88 ms

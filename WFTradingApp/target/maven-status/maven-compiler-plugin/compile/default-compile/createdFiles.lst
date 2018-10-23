@@ -1,0 +1,11 @@
+com\worldfirst\fx\trading\util\OrderStatusEnum.class
+com\worldfirst\fx\trading\repository\TradeOrderRepository.class
+com\worldfirst\fx\trading\service\OrderService.class
+com\worldfirst\fx\trading\SwaggerConfig.class
+com\worldfirst\fx\trading\web\OrderControllerAdvice.class
+com\worldfirst\fx\trading\FxTradeApplication.class
+com\worldfirst\fx\trading\util\OrderTypeEnum.class
+com\worldfirst\fx\trading\web\OrderNotFoundException.class
+com\worldfirst\fx\trading\util\CurrencyEnum.class
+com\worldfirst\fx\trading\model\TradeOrder.class
+com\worldfirst\fx\trading\web\OrderController.class
